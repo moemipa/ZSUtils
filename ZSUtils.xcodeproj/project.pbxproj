@@ -13,6 +13,19 @@
 		ECB3DE12214B58BF009D0718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB3DE11214B58BF009D0718 /* Assets.xcassets */; };
 		ECB3DE15214B58BF009D0718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB3DE13214B58BF009D0718 /* LaunchScreen.storyboard */; };
 		ECB3DE18214B58BF009D0718 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE17214B58BF009D0718 /* main.m */; };
+		ECB3DE21214B590A009D0718 /* ZSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE20214B590A009D0718 /* ZSUtils.m */; };
+		ECB3DE24214B5C1E009D0718 /* NSString+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE23214B5C1E009D0718 /* NSString+ZSExtension.m */; };
+		ECB3DE27214B72A0009D0718 /* UIImage+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE26214B72A0009D0718 /* UIImage+ZSExtension.m */; };
+		ECB3DE2A214B740B009D0718 /* UIView+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE29214B740B009D0718 /* UIView+ZSExtension.m */; };
+		ECB3DE2D214B7603009D0718 /* UIColor+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE2C214B7603009D0718 /* UIColor+ZSExtension.m */; };
+		ECB3DE30214B7683009D0718 /* UIDevice+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE2F214B7683009D0718 /* UIDevice+ZSExtension.m */; };
+		ECB3DE33214B7735009D0718 /* UIViewController+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE32214B7735009D0718 /* UIViewController+ZSExtension.m */; };
+		ECB3DE36214B78A1009D0718 /* NSObject+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE35214B78A1009D0718 /* NSObject+ZSExtension.m */; };
+		ECB3DE39214B7C2B009D0718 /* NSDate+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE38214B7C2B009D0718 /* NSDate+ZSExtension.m */; };
+		ECB3DE3C214B7EE7009D0718 /* UIButton+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE3B214B7EE7009D0718 /* UIButton+ZSExtension.m */; };
+		ECB3DE3F214B84A2009D0718 /* UIControl+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE3E214B84A2009D0718 /* UIControl+ZSExtension.m */; };
+		ECB3DE42214B85C9009D0718 /* UIBarButtonItem+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE41214B85C9009D0718 /* UIBarButtonItem+ZSExtension.m */; };
+		ECB3DE45214B8B34009D0718 /* UIScreen+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE44214B8B34009D0718 /* UIScreen+ZSExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,32 @@
 		ECB3DE14214B58BF009D0718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECB3DE16214B58BF009D0718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECB3DE17214B58BF009D0718 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECB3DE1F214B590A009D0718 /* ZSUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSUtils.h; sourceTree = "<group>"; };
+		ECB3DE20214B590A009D0718 /* ZSUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSUtils.m; sourceTree = "<group>"; };
+		ECB3DE22214B5C1E009D0718 /* NSString+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE23214B5C1E009D0718 /* NSString+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE25214B72A0009D0718 /* UIImage+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE26214B72A0009D0718 /* UIImage+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE28214B740B009D0718 /* UIView+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE29214B740B009D0718 /* UIView+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE2B214B7603009D0718 /* UIColor+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE2C214B7603009D0718 /* UIColor+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE2E214B7683009D0718 /* UIDevice+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE2F214B7683009D0718 /* UIDevice+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE31214B7735009D0718 /* UIViewController+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE32214B7735009D0718 /* UIViewController+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE34214B78A1009D0718 /* NSObject+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE35214B78A1009D0718 /* NSObject+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE37214B7C2B009D0718 /* NSDate+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE38214B7C2B009D0718 /* NSDate+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE3A214B7EE7009D0718 /* UIButton+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE3B214B7EE7009D0718 /* UIButton+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE3D214B84A2009D0718 /* UIControl+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE3E214B84A2009D0718 /* UIControl+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE40214B85C9009D0718 /* UIBarButtonItem+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE41214B85C9009D0718 /* UIBarButtonItem+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZSExtension.m"; sourceTree = "<group>"; };
+		ECB3DE43214B8B34009D0718 /* UIScreen+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ZSExtension.h"; sourceTree = "<group>"; };
+		ECB3DE44214B8B34009D0718 /* UIScreen+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ZSExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +81,8 @@
 		ECB3DDFC214B58BE009D0718 = {
 			isa = PBXGroup;
 			children = (
-				ECB3DE07214B58BE009D0718 /* ZSUtils */,
+				ECB3DE1E214B58E4009D0718 /* ZSUtils */,
+				ECB3DE07214B58BE009D0718 /* ZSUtilsDemo */,
 				ECB3DE06214B58BE009D0718 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +95,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ECB3DE07214B58BE009D0718 /* ZSUtils */ = {
+		ECB3DE07214B58BE009D0718 /* ZSUtilsDemo */ = {
 			isa = PBXGroup;
 			children = (
 				ECB3DE08214B58BE009D0718 /* AppDelegate.h */,
@@ -67,6 +107,39 @@
 				ECB3DE13214B58BF009D0718 /* LaunchScreen.storyboard */,
 				ECB3DE16214B58BF009D0718 /* Info.plist */,
 				ECB3DE17214B58BF009D0718 /* main.m */,
+			);
+			path = ZSUtilsDemo;
+			sourceTree = "<group>";
+		};
+		ECB3DE1E214B58E4009D0718 /* ZSUtils */ = {
+			isa = PBXGroup;
+			children = (
+				ECB3DE1F214B590A009D0718 /* ZSUtils.h */,
+				ECB3DE20214B590A009D0718 /* ZSUtils.m */,
+				ECB3DE22214B5C1E009D0718 /* NSString+ZSExtension.h */,
+				ECB3DE23214B5C1E009D0718 /* NSString+ZSExtension.m */,
+				ECB3DE25214B72A0009D0718 /* UIImage+ZSExtension.h */,
+				ECB3DE26214B72A0009D0718 /* UIImage+ZSExtension.m */,
+				ECB3DE28214B740B009D0718 /* UIView+ZSExtension.h */,
+				ECB3DE29214B740B009D0718 /* UIView+ZSExtension.m */,
+				ECB3DE2B214B7603009D0718 /* UIColor+ZSExtension.h */,
+				ECB3DE2C214B7603009D0718 /* UIColor+ZSExtension.m */,
+				ECB3DE2E214B7683009D0718 /* UIDevice+ZSExtension.h */,
+				ECB3DE2F214B7683009D0718 /* UIDevice+ZSExtension.m */,
+				ECB3DE31214B7735009D0718 /* UIViewController+ZSExtension.h */,
+				ECB3DE32214B7735009D0718 /* UIViewController+ZSExtension.m */,
+				ECB3DE34214B78A1009D0718 /* NSObject+ZSExtension.h */,
+				ECB3DE35214B78A1009D0718 /* NSObject+ZSExtension.m */,
+				ECB3DE37214B7C2B009D0718 /* NSDate+ZSExtension.h */,
+				ECB3DE38214B7C2B009D0718 /* NSDate+ZSExtension.m */,
+				ECB3DE3A214B7EE7009D0718 /* UIButton+ZSExtension.h */,
+				ECB3DE3B214B7EE7009D0718 /* UIButton+ZSExtension.m */,
+				ECB3DE3D214B84A2009D0718 /* UIControl+ZSExtension.h */,
+				ECB3DE3E214B84A2009D0718 /* UIControl+ZSExtension.m */,
+				ECB3DE40214B85C9009D0718 /* UIBarButtonItem+ZSExtension.h */,
+				ECB3DE41214B85C9009D0718 /* UIBarButtonItem+ZSExtension.m */,
+				ECB3DE43214B8B34009D0718 /* UIScreen+ZSExtension.h */,
+				ECB3DE44214B8B34009D0718 /* UIScreen+ZSExtension.m */,
 			);
 			path = ZSUtils;
 			sourceTree = "<group>";
@@ -141,9 +214,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB3DE42214B85C9009D0718 /* UIBarButtonItem+ZSExtension.m in Sources */,
+				ECB3DE3C214B7EE7009D0718 /* UIButton+ZSExtension.m in Sources */,
+				ECB3DE36214B78A1009D0718 /* NSObject+ZSExtension.m in Sources */,
+				ECB3DE27214B72A0009D0718 /* UIImage+ZSExtension.m in Sources */,
+				ECB3DE45214B8B34009D0718 /* UIScreen+ZSExtension.m in Sources */,
 				ECB3DE0D214B58BE009D0718 /* ViewController.m in Sources */,
+				ECB3DE3F214B84A2009D0718 /* UIControl+ZSExtension.m in Sources */,
+				ECB3DE2D214B7603009D0718 /* UIColor+ZSExtension.m in Sources */,
 				ECB3DE18214B58BF009D0718 /* main.m in Sources */,
+				ECB3DE21214B590A009D0718 /* ZSUtils.m in Sources */,
+				ECB3DE30214B7683009D0718 /* UIDevice+ZSExtension.m in Sources */,
+				ECB3DE2A214B740B009D0718 /* UIView+ZSExtension.m in Sources */,
+				ECB3DE33214B7735009D0718 /* UIViewController+ZSExtension.m in Sources */,
 				ECB3DE0A214B58BE009D0718 /* AppDelegate.m in Sources */,
+				ECB3DE24214B5C1E009D0718 /* NSString+ZSExtension.m in Sources */,
+				ECB3DE39214B7C2B009D0718 /* NSDate+ZSExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ZSUtils/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ZSUtilsDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ZSUtils/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ZSUtilsDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
