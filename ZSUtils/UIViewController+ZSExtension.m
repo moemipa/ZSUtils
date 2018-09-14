@@ -21,7 +21,7 @@
     
     UINavigationItem *navigationItem = [self currentNavigationItem];
     
-    if (0 && [[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+    if (/* DISABLES CODE */ (0) && [[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
         UIBarButtonItem *negativeSeperator = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
         negativeSeperator.width = -12;
         

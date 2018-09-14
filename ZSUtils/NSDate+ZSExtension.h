@@ -10,6 +10,9 @@
 
 @interface NSDate (ZSExtension)
 
+///< 获取当前时间的: 前一周(day:-7)丶前一个月(month:-30)丶前一年(year:-1)的时间戳(距1970的秒数)
++ (NSTimeInterval)getExpectTimestamp:(NSInteger)year month:(NSUInteger)month day:(NSUInteger)day;
+
 ///格式化距1970的秒数
 + (NSString *)formatTimeIntervalSince1970:(NSTimeInterval)secs format:(NSString *)format;
 

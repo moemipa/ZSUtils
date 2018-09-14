@@ -10,6 +10,43 @@
 #import "ZSUtils.h"
 
 @implementation NSDate (ZSExtension)
+
++ (NSTimeInterval)getExpectTimestamp:(NSInteger)year month:(NSUInteger)month day:(NSUInteger)day {
+    ///< 当前时间
+    NSDate *currentdata = [NSDate date];
+    
+    ///< NSCalendar -- 日历类，它提供了大部分的日期计算接口，并且允许您在NSDate和NSDateComponents之间转换
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    
+    /*
+     ///<  NSDateComponents：时间容器，一个包含了详细的年月日时分秒的容器。
+     ///< 下例：获取指定日期的年，月，日
+     NSDateComponents *comps = nil;
+     comps = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:currentdata];
+     NSLog(@"年 year = %ld",comps.year);
+     NSLog(@"月 month = %ld",comps.month);
+     NSLog(@"日 day = %ld",comps.day);
+     */
+    NSDateComponents *datecomps = [[NSDateComponents alloc] init];
+    [datecomps setYear:year?:0];
+    [datecomps setMonth:month?:0];
+    [datecomps setDay:day?:0];
+    
+    ///< dateByAddingComponents: 在参数date基础上，增加一个NSDateComponents类型的时间增量
+    NSDate *calculatedate = [calendar dateByAddingComponents:datecomps toDate:currentdata options:0];
+    
+    ///< 打印推算时间
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd hh:mm:ss"];
+    NSString *calculateStr = [formatter stringFromDate:calculatedate];
+    
+    NSLog(@"calculateStr 推算时间: %@",calculateStr );
+    
+    ///< 预期的推算时间
+    //    NSString *result = [NSString stringWithFormat:@"%ld", (long)[calculatedate timeIntervalSince1970]];
+    return [calculatedate timeIntervalSince1970];
+}
+
 ///格式化距1970的秒数
 + (NSString *)formatTimeIntervalSince1970:(NSTimeInterval)secs format:(NSString *)format {
     if (!format || [format isEqualToString:@""]) {

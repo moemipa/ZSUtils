@@ -73,6 +73,21 @@
  */
 + (UIImage *)imageWithColor:(UIColor *)color;
 
+/** 根据本地GIF图片名 获得GIF image对象 */
++ (UIImage *)imageWithGIFNamed:(NSString *)name;
+
+/** 根据一个GIF图片的data数据 获得GIF image对象 */
++ (UIImage *)imageWithGIFData:(NSData *)data;
+
+/** 根据一个GIF图片的URL 获得GIF image对象 */
++ (void)imageWithGIFUrl:(NSString *)url and:(void(^)(UIImage *GIFImage))gifImageBlock;
+
+/**
+ *  截取当前屏幕内容
+ *  @return UIImage *
+ */
++ (UIImage *)imageWithScreenshot;
+
 /**
  *  截取部分图像，包括旋转
  *
