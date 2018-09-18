@@ -14,4 +14,9 @@
 @property (nonatomic, strong) UIBarButtonItem *leftBarButtonItem;
 @property (nonatomic, strong) UIBarButtonItem *rightBarButtonItem;
 
+- (void)alertViewWithTitle:(NSString *)title
+                   content:(NSString *)content
+              buttonTitles:(NSArray<NSString *> *)buttonTitles
+              buttonBlocks:(NSArray<void (^)(UIAlertAction *action)> *)buttonBlocks;
+
 @end

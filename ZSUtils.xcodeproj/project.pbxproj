@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC9A961721509A3A008385AD /* NSFileManager+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A961621509A3A008385AD /* NSFileManager+ZSExtension.m */; };
 		ECB3DE0A214B58BE009D0718 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE09214B58BE009D0718 /* AppDelegate.m */; };
 		ECB3DE0D214B58BE009D0718 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE0C214B58BE009D0718 /* ViewController.m */; };
 		ECB3DE10214B58BE009D0718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB3DE0E214B58BE009D0718 /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC9A961521509A3A008385AD /* NSFileManager+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ZSExtension.h"; sourceTree = "<group>"; };
+		EC9A961621509A3A008385AD /* NSFileManager+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ZSExtension.m"; sourceTree = "<group>"; };
 		ECB3DE05214B58BE009D0718 /* ZSUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3DE08214B58BE009D0718 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECB3DE09214B58BE009D0718 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 			children = (
 				ECB3DE1F214B590A009D0718 /* ZSUtils.h */,
 				ECB3DE20214B590A009D0718 /* ZSUtils.m */,
+				EC9A961521509A3A008385AD /* NSFileManager+ZSExtension.h */,
+				EC9A961621509A3A008385AD /* NSFileManager+ZSExtension.m */,
 				ECB3DE22214B5C1E009D0718 /* NSString+ZSExtension.h */,
 				ECB3DE23214B5C1E009D0718 /* NSString+ZSExtension.m */,
 				ECB3DE25214B72A0009D0718 /* UIImage+ZSExtension.h */,
@@ -225,6 +230,7 @@
 				ECB3DE18214B58BF009D0718 /* main.m in Sources */,
 				ECB3DE21214B590A009D0718 /* ZSUtils.m in Sources */,
 				ECB3DE30214B7683009D0718 /* UIDevice+ZSExtension.m in Sources */,
+				EC9A961721509A3A008385AD /* NSFileManager+ZSExtension.m in Sources */,
 				ECB3DE2A214B740B009D0718 /* UIView+ZSExtension.m in Sources */,
 				ECB3DE33214B7735009D0718 /* UIViewController+ZSExtension.m in Sources */,
 				ECB3DE0A214B58BE009D0718 /* AppDelegate.m in Sources */,

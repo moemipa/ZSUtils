@@ -10,6 +10,7 @@
 
 @interface NSString (ZSExtension)
 
+/// 返回本地化之后的String
 - (NSString *)localized;
 
 /// 返回URLEncoded之后的字符串

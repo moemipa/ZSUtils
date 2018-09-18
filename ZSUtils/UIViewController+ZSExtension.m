@@ -100,4 +100,15 @@
     return navigationItem;
 }
 
+- (void)alertViewWithTitle:(NSString *)title content:(NSString *)content buttonTitles:(NSArray<NSString *> *)buttonTitles buttonBlocks:(NSArray<void (^)(UIAlertAction *action)> *)buttonBlocks {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:content preferredStyle:UIAlertControllerStyleAlert];
+    for (int i = 0; i < buttonTitles.count; i++) {
+        UIAlertAction* action = [UIAlertAction actionWithTitle:buttonTitles[i]
+                                                          style:UIAlertActionStyleDefault
+                                                        handler:buttonBlocks[i]];
+        [alert addAction:action];
+    }
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
 @end
