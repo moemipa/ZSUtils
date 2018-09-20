@@ -19,4 +19,9 @@
               buttonTitles:(NSArray<NSString *> *)buttonTitles
               buttonBlocks:(NSArray<void (^)(UIAlertAction *action)> *)buttonBlocks;
 
+- (void)actionSheetWithTitle:(NSString *)title
+                     content:(NSString *)content
+                buttonTitles:(NSArray<NSString *> *)buttonTitles
+                buttonBlocks:(NSArray<void (^)(UIAlertAction *action)> *)buttonBlocks;
+
 @end

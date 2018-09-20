@@ -10,6 +10,9 @@
 
 @interface NSString (ZSExtension)
 
+/// 判断字符串是否为空
++ (BOOL)isEmpty:(NSString *)str;
+
 /// 返回本地化之后的String
 - (NSString *)localized;
 

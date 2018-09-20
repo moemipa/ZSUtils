@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC9A961721509A3A008385AD /* NSFileManager+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A961621509A3A008385AD /* NSFileManager+ZSExtension.m */; };
+		EC9A9628215222EF008385AD /* NSURL+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A9627215222EF008385AD /* NSURL+ZSExtension.m */; };
 		ECB3DE0A214B58BE009D0718 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE09214B58BE009D0718 /* AppDelegate.m */; };
 		ECB3DE0D214B58BE009D0718 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECB3DE0C214B58BE009D0718 /* ViewController.m */; };
 		ECB3DE10214B58BE009D0718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB3DE0E214B58BE009D0718 /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		EC9A961521509A3A008385AD /* NSFileManager+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ZSExtension.h"; sourceTree = "<group>"; };
 		EC9A961621509A3A008385AD /* NSFileManager+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ZSExtension.m"; sourceTree = "<group>"; };
+		EC9A9626215222EF008385AD /* NSURL+ZSExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+ZSExtension.h"; sourceTree = "<group>"; };
+		EC9A9627215222EF008385AD /* NSURL+ZSExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ZSExtension.m"; sourceTree = "<group>"; };
 		ECB3DE05214B58BE009D0718 /* ZSUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3DE08214B58BE009D0718 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECB3DE09214B58BE009D0718 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				ECB3DE41214B85C9009D0718 /* UIBarButtonItem+ZSExtension.m */,
 				ECB3DE43214B8B34009D0718 /* UIScreen+ZSExtension.h */,
 				ECB3DE44214B8B34009D0718 /* UIScreen+ZSExtension.m */,
+				EC9A9626215222EF008385AD /* NSURL+ZSExtension.h */,
+				EC9A9627215222EF008385AD /* NSURL+ZSExtension.m */,
 			);
 			path = ZSUtils;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 				ECB3DE30214B7683009D0718 /* UIDevice+ZSExtension.m in Sources */,
 				EC9A961721509A3A008385AD /* NSFileManager+ZSExtension.m in Sources */,
 				ECB3DE2A214B740B009D0718 /* UIView+ZSExtension.m in Sources */,
+				EC9A9628215222EF008385AD /* NSURL+ZSExtension.m in Sources */,
 				ECB3DE33214B7735009D0718 /* UIViewController+ZSExtension.m in Sources */,
 				ECB3DE0A214B58BE009D0718 /* AppDelegate.m in Sources */,
 				ECB3DE24214B5C1E009D0718 /* NSString+ZSExtension.m in Sources */,
