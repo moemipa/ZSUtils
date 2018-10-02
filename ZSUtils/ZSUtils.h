@@ -93,6 +93,8 @@ return self; \
 
 @interface ZSUtils : NSObject
 
++ (void)doInBackTask:(id(^)(void))backTask mainTask:(void(^)(id x))mainTask;
+
 + (void)clearCache:(NSString *)path;
 
 + (unsigned long long)systemFreeSize;

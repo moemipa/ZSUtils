@@ -13,14 +13,4 @@
 @property (nonatomic, strong, nullable) UIBarButtonItem *leftBarButtonItem;
 @property (nonatomic, strong, nullable) UIBarButtonItem *rightBarButtonItem;
 
-- (void)alertViewWithTitle:(NSString * _Nullable)title
-                   content:(NSString * _Nullable)content
-              buttonTitles:(NSArray<NSString *> *_Nonnull )buttonTitles
-             buttonActions:(void (^_Nullable)(NSInteger btnIndex))buttonActions;
-
-- (void)actionSheetWithTitle:(NSString * _Nullable)title
-                     content:(NSString * _Nullable)content
-                buttonTitles:(NSArray<NSString *> *_Nonnull )buttonTitles
-               buttonActions:(void (^_Nullable)(NSInteger btnIndex))buttonActions;
-
 @end

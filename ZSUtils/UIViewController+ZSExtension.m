@@ -100,27 +100,4 @@
     return navigationItem;
 }
 
-- (void)alertViewWithTitle:(NSString *)title content:(NSString *)content buttonTitles:(NSArray<NSString *> *)buttonTitles buttonActions:(void (^)(NSInteger btnIndex))buttonActions {
-    [self alertControllerWithTitle:title content:content buttonTitles:buttonTitles buttonActions:buttonActions preferredStyle:UIAlertControllerStyleAlert];
-}
-
-- (void)actionSheetWithTitle:(NSString *)title content:(NSString *)content buttonTitles:(NSArray<NSString *> *)buttonTitles buttonActions:(void (^)(NSInteger btnIndex))buttonActions {
-    [self alertControllerWithTitle:title content:content buttonTitles:buttonTitles buttonActions:buttonActions preferredStyle:UIAlertControllerStyleActionSheet];
-}
-
-- (void)alertControllerWithTitle:(NSString *)title content:(NSString *)content buttonTitles:(NSArray<NSString *> *)buttonTitles buttonActions:(void (^)(NSInteger btnIndex))buttonActions preferredStyle:(UIAlertControllerStyle)preferredStyle {
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
-                                                                   message:content
-                                                            preferredStyle:preferredStyle];
-    for (int i = 0; i < buttonTitles.count; i++) {
-        UIAlertAction* action = [UIAlertAction actionWithTitle:buttonTitles[i]
-                                                         style:UIAlertActionStyleDefault
-                                                       handler:^(UIAlertAction * _Nonnull action) {
-                                                           if (buttonActions) buttonActions(i);
-                                                       }];
-        [alert addAction:action];
-    }
-    [self presentViewController:alert animated:YES completion:nil];
-}
-
 @end

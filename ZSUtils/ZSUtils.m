@@ -12,6 +12,20 @@
 
 @implementation ZSUtils
 
++ (void)doInBackTask:(id(^)(void))backTask mainTask:(void(^)(id x))mainTask {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        id x = nil;
+        if (backTask) {
+            x = backTask();
+        }
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            if (mainTask) {
+                mainTask(x);
+            }
+        });
+    });
+}
+
 /// 删除单个文件或文件夹内所有文件, 但不会删除文件夹
 + (void)clearCache:(NSString *)path {
     NSFileManager *manager = [NSFileManager defaultManager];
