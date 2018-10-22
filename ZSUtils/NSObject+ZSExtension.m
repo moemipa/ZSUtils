@@ -9,6 +9,7 @@
 #import "NSObject+ZSExtension.h"
 #import <UIKit/UIKit.h>
 #import "ZSUtils.h"
+#import <objc/runtime.h>
 
 int GetBuildDateTime(char *szDateTime) {
     const int  MONTH_PER_YEAR=12;
@@ -84,6 +85,34 @@ int GetBuildDateTime(char *szDateTime) {
         return YES;
     }
     return NO;
+}
+
+#pragma mark - runtime
++ (void)swizzlingInstanceMethodForm:(SEL)originalSEL to:(SEL)swizzledSEL {
+    Class class = self;
+    Method originalMethod = class_getInstanceMethod(class, originalSEL);
+    Method swizzledMetthod = class_getInstanceMethod(class, swizzledSEL);
+    BOOL addMethod =  class_addMethod(class, originalSEL, method_getImplementation(swizzledMetthod), method_getTypeEncoding(swizzledMetthod));
+    if (addMethod) {
+        class_replaceMethod(class, swizzledSEL, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+    }
+    else {
+        method_exchangeImplementations(originalMethod, swizzledMetthod);
+    }
+}
+
++ (void)swizzlingClassMethodForm:(SEL)originalSEL to:(SEL)swizzledSEL {
+    Method originalMethod = class_getClassMethod(self, originalSEL);
+    Method swizzledMetthod = class_getClassMethod(self, swizzledSEL);
+    Class metaCalss = object_getClass(self);
+    BOOL addMethod =  class_addMethod(metaCalss, originalSEL, method_getImplementation(swizzledMetthod), method_getTypeEncoding(swizzledMetthod));
+    if (addMethod) {
+        class_replaceMethod(metaCalss, swizzledSEL, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+    }
+    else {
+        method_exchangeImplementations(originalMethod, swizzledMetthod);
+    }
+    
 }
 
 @end

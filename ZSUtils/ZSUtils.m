@@ -10,6 +10,20 @@
 #import "ZSUtils.h"
 #import <objc/runtime.h>
 
+void asyncTask(id(^backTask)(void), void(^mainTask)(id x)) {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        id x = nil;
+        if (backTask) {
+            x = backTask();
+        }
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            if (mainTask) {
+                mainTask(x);
+            }
+        });
+    });
+}
+
 @implementation ZSUtils
 
 + (void)doInBackTask:(id(^)(void))backTask mainTask:(void(^)(id x))mainTask {
@@ -25,6 +39,24 @@
         });
     });
 }
+
+//func asyncTask(inBackground backTaskArray: Array<() -> Any?>, mainTask: @escaping (Array<Any?>) -> Void) {
+//    let dispatchGroup = DispatchGroup()
+//    var resultDict = Dictionary<Int, Any?>()
+//    for i in 0..<backTaskArray.count {
+//        let backTask: () -> Any? = backTaskArray[i]
+//        DispatchQueue.global(qos: .default).async(group:dispatchGroup, execute: {
+//            resultDict[i] = backTask()
+//        })
+//    }
+//    dispatchGroup.notify(queue: DispatchQueue.main, execute:{
+//        var resultArray = Array<Any?>()
+//        for key in resultDict.keys.sorted() {
+//            resultArray.append(resultDict[key] ?? nil)
+//        }
+//        mainTask(resultArray)
+//    })
+//}
 
 /// 删除单个文件或文件夹内所有文件, 但不会删除文件夹
 + (void)clearCache:(NSString *)path {

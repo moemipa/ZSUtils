@@ -8,6 +8,7 @@
 
 #import "UIView+ZSExtension.h"
 #import <objc/runtime.h>
+#import "ZSUtils.h"
 
 static const char* IndexPathKey ="UIView_UserInfo";
 
@@ -174,5 +175,18 @@ static const char* IndexPathKey ="UIView_UserInfo";
     }
     return nil;
 }
+
++ (void)load {
+    SEL layoutSubviews = @selector(layoutSubviews);
+    SEL zs_layoutSubviews = @selector(zs_layoutSubviews);
+    [self swizzlingClassMethodForm:layoutSubviews to:zs_layoutSubviews];
+}
+
+- (void)zs_layoutSubviews {
+    [self zs_layoutSubviews];
+    
+    ZSLog(@"替换后的layoutSubviews");
+}
+
 
 @end

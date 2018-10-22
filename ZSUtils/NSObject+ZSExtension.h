@@ -51,4 +51,21 @@
  */
 + (BOOL)checkTestTime:(NSTimeInterval)time timeoutTitle:(NSString *)timeoutTitle timeoutMessage:(NSString *)timeoutMessage;
 
+
+/**
+ 交换两个对象方法的实现
+
+ @param originalSEL 原方法
+ @param swizzledSEL 用来替换的方法
+ */
++ (void)swizzlingInstanceMethodForm:(SEL)originalSEL to:(SEL)swizzledSEL;
+
+/**
+ 交换两个类方法的实现
+ 
+ @param originalSEL 原方法
+ @param swizzledSEL 用来替换的方法
+ */
++ (void)swizzlingClassMethodForm:(SEL)originalSEL to:(SEL)swizzledSEL;
+
 @end
