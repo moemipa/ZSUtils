@@ -91,9 +91,9 @@ return self; \
 #define MB (KB * 1024.0)
 #define GB (MB * 1024.0)
 
-@interface ZSUtils : NSObject
+void asyncTask(id(^backTask)(void), void(^mainTask)(id x));
 
-+ (void)doInBackTask:(id(^)(void))backTask mainTask:(void(^)(id x))mainTask;
+@interface ZSUtils : NSObject
 
 + (void)clearCache:(NSString *)path;
 

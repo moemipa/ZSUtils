@@ -26,20 +26,6 @@ void asyncTask(id(^backTask)(void), void(^mainTask)(id x)) {
 
 @implementation ZSUtils
 
-+ (void)doInBackTask:(id(^)(void))backTask mainTask:(void(^)(id x))mainTask {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        id x = nil;
-        if (backTask) {
-            x = backTask();
-        }
-        dispatch_sync(dispatch_get_main_queue(), ^{
-            if (mainTask) {
-                mainTask(x);
-            }
-        });
-    });
-}
-
 //func asyncTask(inBackground backTaskArray: Array<() -> Any?>, mainTask: @escaping (Array<Any?>) -> Void) {
 //    let dispatchGroup = DispatchGroup()
 //    var resultDict = Dictionary<Int, Any?>()
