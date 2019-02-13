@@ -18,17 +18,20 @@ static const char *key = "UICONTROL_ACTION_BLOCK";
 }
 
 - (void)handleControlEvents:(UIControlEvents)controlEvents withBlock:(void(^)(id sender))block {
-    objc_setAssociatedObject(self, &key, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    [self addTarget:self action:@selector(action:) forControlEvents:controlEvents];
+    self.actionBlock = block;
+    [self addTarget:self action:@selector(controlEvenAction:) forControlEvents:controlEvents];
 }
 
-- (void)action:(id)x {
-    self.enabled = NO;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.enabled = YES;
-    });
-    void(^actionBlock)(id sender) = objc_getAssociatedObject(self, &key);
-    if (actionBlock) actionBlock(self);
+- (void (^)(id))actionBlock {
+    return objc_getAssociatedObject(self, &key);
+}
+
+- (void)setActionBlock:(void (^)(id))actionBlock {
+    objc_setAssociatedObject(self, &key, actionBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (void)controlEvenAction:(id)x {
+    if (self.actionBlock) self.actionBlock(self);
 }
 
 @end
