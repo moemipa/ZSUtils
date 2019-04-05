@@ -30,6 +30,7 @@
 		EC1C6FFF2257259B0028CD0C /* UIColor+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C6FED2257259B0028CD0C /* UIColor+ZSExtension.m */; };
 		EC1C70002257259B0028CD0C /* UIImage+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C6FEF2257259B0028CD0C /* UIImage+ZSExtension.m */; };
 		EC1C700322572AEE0028CD0C /* UITableView+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C700122572AED0028CD0C /* UITableView+ZSExtension.m */; };
+		EC7BE3D7225733C200CB9696 /* ZSUtils.podspec in Resources */ = {isa = PBXBuildFile; fileRef = EC7BE3D6225733C200CB9696 /* ZSUtils.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		EC1C6FF02257259B0028CD0C /* UIScreen+ZSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ZSExtension.h"; sourceTree = "<group>"; };
 		EC1C700122572AED0028CD0C /* UITableView+ZSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZSExtension.m"; sourceTree = "<group>"; };
 		EC1C700222572AED0028CD0C /* UITableView+ZSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZSExtension.h"; sourceTree = "<group>"; };
+		EC7BE3D6225733C200CB9696 /* ZSUtils.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZSUtils.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		EC1C6FD02257259B0028CD0C /* ZSUtils */ = {
 			isa = PBXGroup;
 			children = (
+				EC7BE3D6225733C200CB9696 /* ZSUtils.podspec */,
 				EC1C6FEE2257259B0028CD0C /* ZSUtils.h */,
 				EC1C6FDC2257259B0028CD0C /* ZSUtils.m */,
 				EC1C700222572AED0028CD0C /* UITableView+ZSExtension.h */,
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC1C6FC72257249C0028CD0C /* LaunchScreen.storyboard in Resources */,
+				EC7BE3D7225733C200CB9696 /* ZSUtils.podspec in Resources */,
 				EC1C6FC42257249C0028CD0C /* Assets.xcassets in Resources */,
 				EC1C6FC22257249A0028CD0C /* Main.storyboard in Resources */,
 			);
