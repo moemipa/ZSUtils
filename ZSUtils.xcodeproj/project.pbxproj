@@ -29,6 +29,7 @@
 		EC1C6FFE2257259B0028CD0C /* NSDate+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C6FEC2257259B0028CD0C /* NSDate+ZSExtension.m */; };
 		EC1C6FFF2257259B0028CD0C /* UIColor+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C6FED2257259B0028CD0C /* UIColor+ZSExtension.m */; };
 		EC1C70002257259B0028CD0C /* UIImage+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C6FEF2257259B0028CD0C /* UIImage+ZSExtension.m */; };
+		EC1C700322572AEE0028CD0C /* UITableView+ZSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C700122572AED0028CD0C /* UITableView+ZSExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,8 @@
 		EC1C6FEE2257259B0028CD0C /* ZSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSUtils.h; sourceTree = "<group>"; };
 		EC1C6FEF2257259B0028CD0C /* UIImage+ZSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZSExtension.m"; sourceTree = "<group>"; };
 		EC1C6FF02257259B0028CD0C /* UIScreen+ZSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ZSExtension.h"; sourceTree = "<group>"; };
+		EC1C700122572AED0028CD0C /* UITableView+ZSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZSExtension.m"; sourceTree = "<group>"; };
+		EC1C700222572AED0028CD0C /* UITableView+ZSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZSExtension.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 			children = (
 				EC1C6FEE2257259B0028CD0C /* ZSUtils.h */,
 				EC1C6FDC2257259B0028CD0C /* ZSUtils.m */,
+				EC1C700222572AED0028CD0C /* UITableView+ZSExtension.h */,
+				EC1C700122572AED0028CD0C /* UITableView+ZSExtension.m */,
 				EC1C6FE42257259B0028CD0C /* UIView+ZSExtension.h */,
 				EC1C6FD12257259B0028CD0C /* UIView+ZSExtension.m */,
 				EC1C6FE32257259B0028CD0C /* UIBarButtonItem+ZSExtension.h */,
@@ -239,6 +244,7 @@
 				EC1C6FFD2257259B0028CD0C /* NSURL+ZSExtension.m in Sources */,
 				EC1C6FF92257259B0028CD0C /* ZSUtils.m in Sources */,
 				EC1C6FFC2257259B0028CD0C /* UIControl+ZSExtension.m in Sources */,
+				EC1C700322572AEE0028CD0C /* UITableView+ZSExtension.m in Sources */,
 				EC1C6FFE2257259B0028CD0C /* NSDate+ZSExtension.m in Sources */,
 				EC1C70002257259B0028CD0C /* UIImage+ZSExtension.m in Sources */,
 				EC1C6FF82257259B0028CD0C /* UIScreen+ZSExtension.m in Sources */,
