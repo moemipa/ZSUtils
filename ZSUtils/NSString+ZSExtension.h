@@ -14,7 +14,9 @@
 + (BOOL)isEmpty:(NSString *)str;
 
 /// 返回本地化之后的String
-- (NSString *)localized;
+@property (nonatomic, readonly, nonnull) NSString *localized;
+
++ (NSString *)randomWithLength:(NSInteger)len;
 
 /// 返回URLEncoded之后的字符串
 - (NSString *)urlencodedString;

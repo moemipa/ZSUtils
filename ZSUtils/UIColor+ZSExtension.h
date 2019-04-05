@@ -17,6 +17,10 @@
  *
  *  @return UIColor
  */
-+ (UIColor *)colorWithHexCode:(NSString *)hexString;
++ (instancetype)colorWithHex:(NSString *)hexString;
+
+@property (class, nonatomic, readonly) UIColor *main;
+
+@property (class, nonatomic, readonly) UIColor *random;
 
 @end
