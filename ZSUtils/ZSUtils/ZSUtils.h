@@ -30,7 +30,8 @@
 #define MAIN_COLOR                          [UIColor colorWithHex:@"#e18996"]
 
 #if DEBUG
-#define ZSLog(format, ...)                  NSLog((@"%s [Line %d] " format ), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#define ZSLog(format, ...)                  printf("%s %s %s [Line %d] %s", __DATE__, __TIME__, __PRETTY_FUNCTION__, __LINE__ , \
+                                            [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String])
 #else
 #define ZSLog(format, ...)
 #endif
