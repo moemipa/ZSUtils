@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B17A4BA23F665030006F0AE /* WKWebView+POST.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B17A4B823F665020006F0AE /* WKWebView+POST.m */; };
 		EC1C6FBC2257249A0028CD0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C6FBB2257249A0028CD0C /* AppDelegate.m */; };
 		EC1C6FBF2257249A0028CD0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1C6FBE2257249A0028CD0C /* ViewController.m */; };
 		EC1C6FC22257249A0028CD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC1C6FC02257249A0028CD0C /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B17A4B823F665020006F0AE /* WKWebView+POST.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+POST.m"; sourceTree = "<group>"; };
+		5B17A4B923F665020006F0AE /* WKWebView+POST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+POST.h"; sourceTree = "<group>"; };
 		EC1C6FB72257249A0028CD0C /* ZSUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZSUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC1C6FBA2257249A0028CD0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EC1C6FBB2257249A0028CD0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				EC7BE3D6225733C200CB9696 /* ZSUtils.podspec */,
 				EC1C6FEE2257259B0028CD0C /* ZSUtils.h */,
 				EC1C6FDC2257259B0028CD0C /* ZSUtils.m */,
+				5B17A4B923F665020006F0AE /* WKWebView+POST.h */,
+				5B17A4B823F665020006F0AE /* WKWebView+POST.m */,
 				EC1C700222572AED0028CD0C /* UITableView+ZSExtension.h */,
 				EC1C700122572AED0028CD0C /* UITableView+ZSExtension.m */,
 				EC1C6FE42257259B0028CD0C /* UIView+ZSExtension.h */,
@@ -247,6 +252,7 @@
 				EC1C6FF32257259B0028CD0C /* NSObject+ZSExtension.m in Sources */,
 				EC1C6FFD2257259B0028CD0C /* NSURL+ZSExtension.m in Sources */,
 				EC1C6FF92257259B0028CD0C /* ZSUtils.m in Sources */,
+				5B17A4BA23F665030006F0AE /* WKWebView+POST.m in Sources */,
 				EC1C6FFC2257259B0028CD0C /* UIControl+ZSExtension.m in Sources */,
 				EC1C700322572AEE0028CD0C /* UITableView+ZSExtension.m in Sources */,
 				EC1C6FFE2257259B0028CD0C /* NSDate+ZSExtension.m in Sources */,
