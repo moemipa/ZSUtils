@@ -15,14 +15,14 @@
  *
  *  @return iPhone1,1
  */
-+ (NSString*)platform;
++ (NSString*)deviceModel;
 
 /**
  *  获取设备版本名字
  *
  *  @return iPhone 1G
  */
-+ (NSString *)platformString;
++ (NSString *)deviceModelName;
 
 /**
  *  app版本
